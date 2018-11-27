@@ -27,6 +27,7 @@ jobs:
           paths: .
 
   deploy:
+    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/repo
